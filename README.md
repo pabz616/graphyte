@@ -29,3 +29,10 @@ This is to perform all manner of automation tests using TestNG
 6. Add the JAR files that contain the Selenium API: Click 'Add External JARs' and add what was downloaded from https://selenium.dev/downloads/
 7. Click Finish and verify you can see TestNG project in the project Package Explorer window
 ```
+
+## Pro-Tips
+```
+1. Under "src" file, right-click and create new testNG file as TestNG class
+2. Once the test is composed, right-click and select TestNG > Convert to TestNG == an xml file will be generated with the relevant test classes referenced. You can add more to this as new classes are created for the package
+3. Run the tests from the xml file: select Run As "TestNG Suite"
+```
