@@ -16,13 +16,14 @@ public class firstTestNGClass {
     driver = new ChromeDriver();
     driver.get(baseUrl);
   }
-    
-  @Test
+  
+  @Test(priority=1)
   public void verifyHomepageTitle() {
       String expectedTitle = "Welcome: Mercury Tours";
       String actualTitle = driver.getTitle();
       Assert.assertEquals(actualTitle, expectedTitle);
   }
+  
 
   @AfterTest
   public void afterTest() {

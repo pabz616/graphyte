@@ -2,12 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="baseUrl" value="http://demo.guru99.com/test/newtours/"/>
+    <parameter name="pathToExecutable" value="../drivers/chromedriver78"/>
     <classes>
-      <class name="firsttestngpackage.firstTestNGClass">
+      <class name="com.test.sitename.TemplateTest">
         <methods>
-          <include name="verifyHomepageTitle"/>
+          <include name="afterTest"/>
+          <include name="f"/>
+          <include name="setUp"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- firsttestngpackage.firstTestNGClass -->
+      </class> <!-- com.test.sitename.TemplateTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

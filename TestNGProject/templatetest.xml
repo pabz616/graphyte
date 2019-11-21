@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Template Suite">	
+	 <parameter name = "pathToExecutable" value = "#"/>
+  <test name="TemplateTest">
+   <parameter name = "comment" value = "This is my parameter"/>
+    <classes>
+      <class name="com.test.sitename.TemplateTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

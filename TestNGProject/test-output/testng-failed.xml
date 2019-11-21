@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="firsttestngpackage.firstTestNGClass">
+      <class name="com.demosite.fiveelements.CreateAccount">
         <methods>
-          <include name="verifyHomepageTitle"/>
+          <include name="tearDown"/>
+          <include name="registrationFormUI"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- firsttestngpackage.firstTestNGClass -->
+      </class> <!-- com.demosite.fiveelements.CreateAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
