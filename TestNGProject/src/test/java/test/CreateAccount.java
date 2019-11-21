@@ -1,10 +1,14 @@
 package test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 import pages.RegistrationPage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.openqa.selenium.WebDriver;
@@ -15,13 +19,12 @@ public class CreateAccount {
     public RegistrationPage onNewAccountForm = new RegistrationPage(driver);
     
     public static void main(String [] args) {}
-    
-    public String chrome_browser = "webdriver.chrome.driver";
     public String baseUrl = "http://5elementslearning.com/demosite/create_account.php";
-    public String pathToExecutable = "drivers/chromedriver78";
 
-    @BeforeTest
-    public void setUp() {
+	@BeforeTest
+	@Parameters({"chrome_browser", "pathToExecutable"})
+    public void setUp(@Optional("webdriver.chrome.driver") String chrome_browser, @Optional("drivers/chromedriver78") String pathToExecutable) {
+		
         System.setProperty(chrome_browser, pathToExecutable);
     	driver = new ChromeDriver();    	
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -44,7 +47,7 @@ public class CreateAccount {
     	onNewAccountForm.submitAccountCredentials(driver);
     }
     
-    @AfterTest
+	@AfterTest
     public void tearDown() {
     	driver.close();
     }
