@@ -10,7 +10,7 @@ public class RegistrationPage {
 	//LOCATORS
 	
 	By header = By.xpath("//h1[contains(.,'My Account Information')]");
-	By select_male = By.xpath(("//h1[contains(.,'My Account Information')]"));
+	By select_male = By.xpath("//input[@value='m']");
 	By fname_input = By.name("firstname");
 	By lname_input = By.name("lastname");
 	By dob_datePicker = By.name("dob");
