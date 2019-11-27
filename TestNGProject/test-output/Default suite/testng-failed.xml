@@ -5,7 +5,7 @@
     <classes>
       <class name="test.CreateAccount">
         <methods>
-          <include name="getUrl"/>
+          <include name="registrationFormUIValidation"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
