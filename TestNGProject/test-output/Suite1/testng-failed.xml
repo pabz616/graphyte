@@ -17,6 +17,13 @@
           <include name="registrationFormSubmission"/>
         </methods>
       </class> <!-- test.CreateAccount -->
+      <class name="test.CheckoutFlow">
+        <methods>
+          <include name="itemPurchaseTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.CheckoutFlow -->
     </classes>
   </test> <!-- CreateAccount(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
