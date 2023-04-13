@@ -10,6 +10,7 @@
   <test name="CreateAccount">  	
     <classes>
       <class name="test.CreateAccount"/>
+      <class name="test.CheckoutFlow"/>
     </classes>
   </test>
 </suite>
